@@ -1,0 +1,163 @@
+{
+  "owners": [
+    {
+      "id": "own_1",
+      "name": "Prabahar R",
+      "phone": "9840012345",
+      "loyaltyPoints": 20
+    },
+    {
+      "id": "own_sKfRBIWQ",
+      "name": "Januja",
+      "phone": "8956799000",
+      "loyaltyPoints": 0
+    },
+    {
+      "id": "own_s4FZqZq4",
+      "name": "Deepitha",
+      "phone": "8939098414",
+      "loyaltyPoints": 0
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "veh_1",
+      "ownerId": "own_1",
+      "make": "Hyundai",
+      "model": "i20",
+      "year": 2021,
+      "plateNumber": "TN 66 AB 1234"
+    },
+    {
+      "id": "veh_VtwddTYh",
+      "ownerId": "own_sKfRBIWQ",
+      "make": "Benz",
+      "model": "C3RO",
+      "year": "2025",
+      "plateNumber": "tn23ghyinn"
+    },
+    {
+      "id": "veh_BcXmjP2l",
+      "ownerId": "own_s4FZqZq4",
+      "make": "Tata ",
+      "model": "Altroz Pure S",
+      "year": "2021",
+      "plateNumber": "-"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "job_1",
+      "vehicleId": "veh_1",
+      "complaint": "Engine noise on cold start",
+      "diagnosis": "Worn drive belt",
+      "remedy": "Replaced drive belt and tensioner",
+      "status": "delivered",
+      "createdAt": "2026-07-10T09:30:00.000Z",
+      "deliveredAt": "2026-07-11T17:00:00.000Z",
+      "nextServiceDate": "2027-01-10",
+      "nextServiceKm": 45000
+    },
+    {
+      "id": "job_xNE7FgLl",
+      "vehicleId": "veh_VtwddTYh",
+      "complaint": "engine not starting bad brakes",
+      "diagnosis": "",
+      "remedy": "",
+      "status": "received",
+      "createdAt": "2026-08-04T20:10:11.319Z",
+      "deliveredAt": null,
+      "nextServiceDate": null,
+      "nextServiceKm": null
+    },
+    {
+      "id": "job_82j0okNy",
+      "vehicleId": "veh_BcXmjP2l",
+      "complaint": "General Maintenance",
+      "diagnosis": "",
+      "remedy": "",
+      "status": "received",
+      "createdAt": "2026-08-04T20:13:57.096Z",
+      "deliveredAt": null,
+      "nextServiceDate": null,
+      "nextServiceKm": null
+    }
+  ],
+  "invoices": [
+    {
+      "id": "inv_1",
+      "jobId": "job_1",
+      "items": [
+        {
+          "description": "Drive belt",
+          "amount": 1200
+        },
+        {
+          "description": "Tensioner pulley",
+          "amount": 900
+        },
+        {
+          "description": "Labour charge",
+          "amount": 600
+        }
+      ],
+      "taxPercent": 18,
+      "status": "paid",
+      "createdAt": "2026-07-11T17:10:00.000Z"
+    },
+    {
+      "id": "inv_2gGLe3vR",
+      "jobId": "job_xNE7FgLl",
+      "items": [
+        {
+          "description": "Brake pads",
+          "amount": 1000
+        },
+        {
+          "description": "Gear Box",
+          "amount": 2000
+        },
+        {
+          "description": "Engine oil",
+          "amount": 500
+        }
+      ],
+      "taxPercent": 18,
+      "status": "proforma",
+      "createdAt": "2026-08-04T20:10:55.860Z"
+    }
+  ],
+  "feedback": [
+    {
+      "id": "fb_1",
+      "jobId": "job_1",
+      "rating": 5,
+      "comment": "Quick and honest service.",
+      "createdAt": "2026-07-12T10:00:00.000Z"
+    }
+  ],
+  "inspections": [],
+  "expenses": [
+    {
+      "id": "exp_1",
+      "category": "Rent",
+      "amount": 15000,
+      "date": "2026-07-01"
+    },
+    {
+      "id": "exp_2",
+      "category": "Utilities",
+      "amount": 3200,
+      "date": "2026-07-05"
+    }
+  ],
+  "notifications": [
+    {
+      "id": "note_yeWieiJD",
+      "jobId": "job_82j0okNy",
+      "channel": "whatsapp",
+      "message": "Your car is ready for pickup",
+      "sentAt": "2026-08-04T20:14:07.353Z"
+    }
+  ]
+}
