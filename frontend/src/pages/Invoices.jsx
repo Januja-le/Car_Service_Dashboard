@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import api from "../api";
+import api, { API_URL } from "../api";
 import Topbar from "../components/Topbar";
 import StatusBadge from "../components/StatusBadge";
 
@@ -43,11 +43,11 @@ export default function Invoices() {
                   <td className="px-4 py-3 text-right">
                     <a
                       className="font-medium text-brand-700 hover:underline"
-                      href={`/api/invoices/${inv.id}/pdf`}
+                      href={`${API_URL}/invoices/${inv.id}/pdf`}
                       target="_blank"
                       rel="noreferrer"
                     >
-                      PDF
+                    PDF
                     </a>
                   </td>
                 </tr>

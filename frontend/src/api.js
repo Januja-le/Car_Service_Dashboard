@@ -1,7 +1,9 @@
 import axios from "axios";
 
+export const API_URL = "https://car-service-dashboard.onrender.com/api";
+
 const api = axios.create({
-  baseURL: "https://car-service-dashboard.onrender.com/api",
+  baseURL: API_URL,
 });
 
 export default api;
